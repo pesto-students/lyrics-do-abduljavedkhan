@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+
+<div class="container">
+    <h1>LyricsDo</h1>
+    <form id="searchForm" >
+  <input type="search" id="songsearch" name="songsearch" placeholder="Enter artist or song name...              ">
+  <button type="submit" class="button button4">Search</button>
+</form>
+</div>
+</header>
+<section class="result" id="result">
+    <h3>Results will be displayed here </h3>
+</section>
+<div id="listingTable"></div>
+page: <span id="page"></span>
+<a href="javascript:prevPage()" id="btn_prev">Prev</a>
+<a href="javascript:nextPage()" id="btn_next">Next</a>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
