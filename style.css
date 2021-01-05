@@ -1,0 +1,71 @@
+.header{
+    background-position: center;
+}
+.searchForm{
+    background-position: center;
+    text-align: center;
+}
+.result{
+    color: black;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 20px;
+ }
+    .listingTable{
+    width: 40%;
+    margin: 25px auto;
+}
+
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+  
+  .button4 {border-radius: 12px;}
+
+  .song-data{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,0);
+
+}
+.song-data li{
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline;
+    text-decoration-color: rgb(12, 147, 100);
+    position: relative;
+    /* line-height: 30px; */
+}
+
+
+.song-data li div{
+    float: left;
+}
+
+.song-data li span{
+    float: right;
+    background-color: #008CBA;
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
