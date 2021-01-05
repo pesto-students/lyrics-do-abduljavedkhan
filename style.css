@@ -1,19 +1,21 @@
-header{
-    
-  background-position: center;
-                padding: 20px;
-                background-repeat: no-repeat;
-  background-size: contain, cover;
-            }
+.header{
+    background-position: center;
+}
+.searchForm{
+    background-position: center;
+    text-align: center;
+}
+.result{
+    color: black;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 20px;
+ }
+    .listingTable{
+    width: 40%;
+    margin: 25px auto;
+}
 
-            .result{
-                color: black;
-                text-align: center;
-                font-family: 'Roboto Condensed', sans-serif;
-                margin-top: 20px;
-            
-            
-            }
 .button {
     background-color: #008CBA;
     border: none;
