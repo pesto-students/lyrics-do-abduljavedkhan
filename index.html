@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    <header>
+    <header class="header">
+        <h1>LyricsDo</h1>
+        <form id="searchForm">
+            <input type="search" id="songsearch" name="songsearch" placeholder="Enter artist or song name..." />
+            <button type="submit" class="button button4">Search</button>
+        </form>
+    </header>
+    <div id="listingTable"></div>
+    <a href="javascript:prevPage()" class="button button4" id="btn_prev">Prev</a>
+    <a href="javascript:nextPage()" class="button button4" id="btn_next">Next</a>
 
-<div class="container">
-    <h1>LyricsDo</h1>
-    <form id="searchForm" >
-  <input type="search" id="songsearch" name="songsearch" placeholder="Enter artist or song name...              ">
-  <button type="submit" class="button button4">Search</button>
-</form>
-</div>
-</header>
-<section class="result" id="result">
-    <h3>Results will be displayed here </h3>
-</section>
-<div id="listingTable"></div>
-page: <span id="page"></span>
-<a href="javascript:prevPage()" id="btn_prev">Prev</a>
-<a href="javascript:nextPage()" id="btn_next">Next</a>
+    <section class="result" id="result">
+        <h4>Song List will be displayed here </h4>
+    </section>
 
 
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
