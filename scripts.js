@@ -13,19 +13,24 @@ document.getElementById('loader').style.display = 'none';
 // search song based on keyword
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    searchKeyword = search.value.trim()
+    searchKeyword = search.value.trim();
+    document.getElementById('result').style.display = 'none';
+    document.getElementById('loader').style.display = 'initial';
     if (!searchKeyword) { alert("No keywords to search") }
-    else { searchSong(searchKeyword) }
+    else { 
+        searchSong(searchKeyword) }
 });
 
 // search song API call
 const searchSong = async (searchKeyword) => {
-    document.getElementById('loader').style.display = 'initial';
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('result').style.display = 'initial';
     try {
         const res = await fetch(`${apiURL}/suggest/${searchKeyword}`);
         const data = await res.json();
         nextPageUrl = data.next;
         if(nextPageUrl){
+          
             document.getElementById('btn_next').style.display = 'initial';
         }
         document.getElementById('loader').style.display = 'none';
@@ -37,6 +42,7 @@ const searchSong = async (searchKeyword) => {
 
 // render response data of searched keyword
 function showData(data) {
+
     result.innerHTML = `<ul class="song-data">
                         ${data.data.map(song =>
                         `<li>
