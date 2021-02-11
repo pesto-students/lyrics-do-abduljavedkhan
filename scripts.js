@@ -35,6 +35,7 @@ const searchSong = async (searchKeyword) => {
         }
         document.getElementById('loader').style.display = 'none';
         showData(data);
+        
     } catch (e) {
         console.log('something went wrong', e);
     }

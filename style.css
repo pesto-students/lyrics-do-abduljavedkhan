@@ -12,24 +12,40 @@
     padding-top: 05px; 
 }
 
+#songsearch{
+    margin-left: 25px;
+    border-color: ivory;
+}
 
+
+.lname{
+    margin-left: 25px;
+}
 
 
 #loader {
     position: absolute;
-    text-align: end;
     left: 50%;
-    top: 55%;
+    top: 50%;
     z-index: 1;
     width: 20px;
     height: 20px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
+    margin: -36px 0 0 -76px;
+    border: 8px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 8px solid #3498db;
+	animation-name: spin;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
    
   }
-  
+@keyframes spin{
+	to{
+		transform: rotate(360deg);
+	}
+}  
+
 
 .header h1{
     color: slategrey;
